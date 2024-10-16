@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Einstein Palace Hotel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<h1>Escolha em qual quarto deseja se hospedar</h1><br><br>
+
+  <ion-radio-group [(ngModel)] = "quarto">
+    <ion-radio value="Standard" labelPlacement="stacked">Quarto Standard</ion-radio><br><br>
+    <ion-radio value="Superior" labelPlacement="stacked">Quarto Superior</ion-radio><br><br>
+    <ion-radio value="Master" labelPlacement="stacked">Quarto Master</ion-radio><br><br>
+    <ion-radio value="Luxo" labelPlacement="stacked">Quarto Luxo</ion-radio><br><br>
+  </ion-radio-group>
+
+  <ion-item>
+    <ion-input label="Digite a quantidade de dias" labelPlacement="floating" placeholder="Valor" [(ngModel)]="dias"></ion-input>
+  </ion-item>
+
+  <ion-button id="present-alert" expand="block" (click)="Calcular()">Calcular</ion-button>
+
+
+</ion-content>

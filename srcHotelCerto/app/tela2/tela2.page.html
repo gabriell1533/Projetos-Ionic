@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Confirmar dados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<h1>Confirmar dados</h1><br>
+<p>Quarto selecionado: {{qEscolhido}}</p>
+<p>Valor da diária: {{valord}}</p>
+<p>Valor total a ser pago: {{resultado}}</p>
+
+<ion-button expand="block" [routerLink]="['/']">Corrigir</ion-button>
+
+<ion-button expand="block" [routerLink]="['/tela3']" [queryParams]="{quarto: qEscolhido}">Confirmar</ion-button>
+
+</ion-content>
